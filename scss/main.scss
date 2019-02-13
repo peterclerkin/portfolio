@@ -1,149 +1,161 @@
+@import 'menu';
+
 $primary-color: #00213e;
 
 html {
-  font-family: proxima nova, sans-serif;
+    font-family: proxima nova, sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  font-size: 100%;
-  vertical-align: baseline;
+    box-sizing: border-box;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 body {
-  background: $primary-color;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  margin: 0;
+    background: $primary-color;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 ul li {
-  list-style: none;
-  display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 .hero {
-  height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
 }
+
 .hero .video {
-  background-image: url(../images/p-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1;
+    background-image: url(../images/p-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
 }
+
 .hero .video img {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
+
 .hero .video video {
-  min-width: 100%;
-  min-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 nav {
-  width: 90%;
-  margin: 0 auto;
-  line-height: 60px;
-  text-align: right;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 60px;
+    text-align: right;
 }
+
 nav .logo {
-  float: left;
+    float: left;
 }
+
 nav .desktopNav a {
-  color: white;
-  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
-  text-decoration: none;
-  padding-left: 40px;
+    color: white;
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    padding-left: 40px;
 }
 
 .mobileNav {
-  display: none;
+    display: none;
 }
 
 .scroll {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 1.7%;
-  bottom: 47px;
-  transform: rotate(270deg);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1.7%;
+    bottom: 47px;
+    transform: rotate(270deg);
 }
+
 .scroll p {
-  color: white;
-  font-size: 16px;
-  text-shadow: 5px 2px 22px rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    text-shadow: 5px 2px 22px rgba(0, 0, 0, 0.8);
 }
 
 .line {
-  height: 2px;
-  width: 70px;
-  margin-right: 10px;
-  background-color: white;
-  -webkit-box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
+    height: 2px;
+    width: 70px;
+    margin-right: 10px;
+    background-color: white;
+    -webkit-box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.8);
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    width: 100%;
-  }
+    nav {
+        width: 100%;
+    }
 
-  .desktopNav {
-    display: block;
-    width: 100%;
-  }
-  .desktopNav a {
-    padding-left: 0px !important;
-  }
+    .desktopNav {
+        display: block;
+        width: 100%;
+    }
 
-  .logo {
-    padding-left: 20px;
-  }
+    .desktopNav a {
+        padding-left: 0px !important;
+    }
 
-  .mobileNav {
-    display: block;
-    padding-right: 20px;
-  }
-  .mobileNav a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-  }
-  .mobileNav .scroll {
-    display: none;
-  }
-  .mobileNav i.fas.fa-bars {
-    margin-top: 25px;
-    font-size: 30px;
-    color: white;
-  }
+    .logo {
+        padding-left: 20px;
+    }
 
-  ul {
-    width: 100%;
-    background-color: #00213e;
-    display: none;
-  }
+    .mobileNav {
+        display: block;
+        padding-right: 20px;
+    }
 
-  ul li {
-    display: block;
-    text-align: center;
-  }
+    .mobileNav a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
 
-  .active {
-    display: block;
-  }
+    .mobileNav .scroll {
+        display: none;
+    }
+
+    .mobileNav i.fas.fa-bars {
+        margin-top: 25px;
+        font-size: 30px;
+        color: white;
+    }
+
+    ul {
+        width: 100%;
+        background-color: #00213e;
+        display: none;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
 }
