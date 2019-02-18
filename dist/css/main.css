@@ -1,3 +1,19 @@
+.mobile-nav {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  transition: all 0.5s ease-out; }
+  .mobile-nav .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    transition: all 0.5s ease-out; }
+  .mobile-nav.close {
+    transform: rotate(180deg); }
+
 html {
   font-family: proxima nova, sans-serif; }
 
@@ -51,17 +67,11 @@ nav {
   line-height: 60px;
   text-align: right; }
 
-nav .logo {
-  float: left; }
-
-nav .desktopNav a {
+nav .desktop-nav a {
   color: white;
   text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
   text-decoration: none;
   padding-left: 40px; }
-
-.mobileNav {
-  display: none; }
 
 .scroll {
   display: flex;
@@ -88,27 +98,27 @@ nav .desktopNav a {
 @media screen and (max-width: 768px) {
   nav {
     width: 100%; }
-  .desktopNav {
+  .desktop-nav {
     display: block;
     width: 100%; }
-  .desktopNav a {
+  .desktop-nav a {
     padding-left: 0px !important; }
   .logo {
     padding-left: 20px; }
-  .mobileNav {
+  .mobile-nav {
     display: block;
     padding-right: 20px; }
-  .mobileNav a {
+  .mobile-nav a {
     color: white;
     text-decoration: none;
     font-size: 30px; }
-  .mobileNav .scroll {
+  .mobile-nav .scroll {
     display: none; }
-  .mobileNav i.fas.fa-bars {
+  .mobile-nav i.fas.fa-bars {
     margin-top: 25px;
     font-size: 30px;
     color: white; }
-  ul {
+  .menu-nav {
     width: 100%;
     background-color: #00213e;
     display: none; }

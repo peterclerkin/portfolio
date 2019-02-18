@@ -12,20 +12,17 @@
 <body>
     <div class="hero">
         <nav>
-            <a href="#" class="logo"></a>
-            <div class="mobileNav">
-                <div class="menu">
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
-                    <div class="btn-line"></div>
-                </div>
+            <div class="mobile-nav">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
             </div>
-            <div class="desktopNav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">CV / Resume</a></li>
-                    <li><a href="#">Contact</a></li>
+            <div class="desktop-nav">
+                <ul class="menu-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Work</a></li>
+                    <li class="nav-item"><a href="#">CV / Resume</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,15 +42,6 @@
         <a href="#"><img src="/dist/images/05.png" alt="project image"></a>
         <a href="#"><img src="/dist/images/06.png" alt="project image"></a>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('ul').toggleClass('active');
-            })
-        })
-    </script>
 </body>
 
 </html>
