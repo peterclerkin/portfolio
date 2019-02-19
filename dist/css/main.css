@@ -13,6 +13,12 @@
     transition: all 0.5s ease-out; }
   .mobile-nav.close {
     transform: rotate(180deg); }
+    .mobile-nav.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .mobile-nav.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .mobile-nav.close .btn-line:nth-child(3) {
+      transform: rotate(135deg) translate(-6px, 6px); }
 
 html {
   font-family: proxima nova, sans-serif; }
