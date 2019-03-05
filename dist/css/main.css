@@ -20,6 +20,13 @@
     .mobile-nav.close .btn-line:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden; }
+
 html {
   font-family: proxima nova, sans-serif; }
 
@@ -118,18 +125,23 @@ nav .desktop-nav a {
     color: white;
     text-decoration: none;
     font-size: 30px; }
-  .mobile-nav .scroll {
-    display: none; }
-  .mobile-nav i.fas.fa-bars {
-    margin-top: 25px;
-    font-size: 30px;
-    color: white; }
   .menu-nav {
+    position: fixed;
     width: 100%;
-    background-color: #00213e;
-    display: none; }
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    visibility: hidden;
+    overflow: hidden; }
+    .menu-nav.show {
+      visibility: visible;
+      background-color: #00213e;
+      opacity: 0.9;
+      transform: translate3d(0, 0, 0);
+      transition: all 0.5s ease-out; }
   ul li {
     display: block;
-    text-align: center; }
-  .active {
-    display: block; } }
+    text-align: center; } }
