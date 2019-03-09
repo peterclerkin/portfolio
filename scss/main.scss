@@ -36,7 +36,7 @@ ul li {
     width: 100%;
 }
 
-.hero .video {
+.hero .main-bg {
     background-image: url(../images/p-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -50,16 +50,6 @@ ul li {
     z-index: -1;
 }
 
-.hero .video img {
-    width: 100%;
-    height: 100vh;
-}
-
-.hero .video video {
-    min-width: 100%;
-    min-height: 100%;
-}
-
 nav {
     width: 90%;
     margin: 0 auto;
@@ -67,7 +57,13 @@ nav {
     text-align: right;
 }
 
-nav .desktop-nav a {
+.nav-item {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.nav-item a {
     color: white;
     text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.8);
     text-decoration: none;
@@ -128,26 +124,44 @@ nav .desktop-nav a {
         font-size: 30px;
     }
 
-    .menu-nav {
+    .desktop-nav {
         position: fixed;
         width: 100%;
         height: 100vh;
         margin: 0;
-        align-items: center;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
         visibility: hidden;
-        overflow: hidden;
+        top: 0;
 
 
         &.show {
             visibility: visible;
-            background-color: #00213e;
-            opacity: 0.9;
-            transform: translate3d(0, 0, 0);
-            @include easeOut;
         }
+
+        & ul.menu-nav {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            overflow: hidden;
+            height: 100vh;
+            margin: 0;
+            background: rgba(darken($primary-color, 2), 0.9);
+            transform: translate3d(0, -100%, 0);
+            @include easeOut;
+
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .nav-item {
+            font-size: 28px;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-weight: 300;
+        }
+
+
     }
 
 
