@@ -1,11 +1,23 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 $primary-color: #00213e;
 $test-color: #c73016;
 
+@font-face {
+    src: url(/fonts/Nexa_Bold.otf);
+    font-family: nexa-bold;
+
+    src: url(/fonts/ProximaNovaAltLight.otf);
+    font-family: proxa-light;
+
+    src: url(/fonts/ProximaNova-Regular.otf);
+    font-family: proxa-reg;
+}
+
 html {
-    font-family: proxima nova, sans-serif;
+    font-family: proxa-reg, sans-serif;
 }
 
 * {
@@ -20,6 +32,13 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+}
+
+h2 {
+    font-family: proxa-reg;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 p {
@@ -97,18 +116,38 @@ nav {
 
 //Projects Section
 
+.proj-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
 .projects {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0.7rem;
 }
 
 img {
     width: 100%;
+
+    &:hover {
+        opacity: 0.5;
+        @include easeOut;
+    }
 }
 
 
-@media screen and (max-width: 768px) {
+// Widescreens
+@include mediaXl {}
+
+// Desktops & Laptops
+@include mediaLg {}
+
+// Tablets & Small Laptops
+@include mediaMd {
     nav {
         width: 100%;
     }
@@ -177,12 +216,21 @@ img {
 
     }
 
-
-
     ul li {
         display: block;
         text-align: center;
     }
 
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+
+}
+
+// Smartphones
+@include mediaSm {
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
