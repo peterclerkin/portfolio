@@ -10,20 +10,23 @@
 </head>
 
 <body>
+    <header id="home">
     <div class="hero">
-
-        <div class="mobile-nav">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
         <nav class="desktop-nav">
+            <div class="logo">
+                <img src="images/p-clerkin-logo.png">
+            </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Projects</a></li>
-                <li class="nav-item"><a href="#">CV / Resume</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item" onclick="closeMenu()"><a href="#home">Home</a></li>
+                <li class="nav-item" onclick="closeMenu()"><a href="#projects">Projects</a></li>
+                <li class="nav-item" onclick="closeMenu()"><a href="#cv">CV / Resume</a></li>
+                <li class="nav-item" onclick="closeMenu()"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="mobile-nav">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
         </nav>
         <div class="main-bg">
             <video src="" autoplay></video>
@@ -34,6 +37,9 @@
         </div>
     </div>
 
+    </header>
+
+    <section id="projects">
     <div class="proj-title">
         <h2>Projects</h2>
     </div>
@@ -46,15 +52,20 @@
         <div class="item"><a href="https://peterclerkin.github.io/myreads/" target="_blank"><img src="/dist/images/my-reads-project.jpg" alt="project image"></a></div>
         <div class="item"><a href="https://peterclerkin.github.io/neighbourhood-map/" target="_blank"><img src="/dist/images/neighbourhood-map-project.jpg" alt="project image"></a></div>
     </div>
+</section>
 
+<section id="cv">
     <div class="proj-title">
         <h2>CV / Resume</h2>
     </div>
+</section>
 
+<section id="contact">
     <div class="proj-title">
         <h2>Contact</h2>
     </div>
-
+</section>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 
