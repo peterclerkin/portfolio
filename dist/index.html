@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <title>Peter Clerkin - Portfolio</title>
 </head>
 
 <body>
     <header id="home">
-    <div class="hero">
         <nav class="desktop-nav">
             <div class="logo">
                 <img src="images/p-clerkin-logo.png">
@@ -28,6 +27,7 @@
                 <div class="btn-line"></div>
             </div>
         </nav>
+    </header>
         <div class="main-bg">
             <video src="" autoplay></video>
         </div>
@@ -35,9 +35,6 @@
             <div class="line"></div>
             <p>SCROLL</p>
         </div>
-    </div>
-
-    </header>
 
     <section id="projects">
     <div class="proj-title">
@@ -45,12 +42,70 @@
     </div>
 
     <div class="projects">
-        <div class="item"><a href="https://webtown.ie" target="_blank"><img src="/dist/images/webtown-project-image1.jpg" alt=" Webtown project image"></a></div>
-        <div class="item"><a href="https://johnruth.ie" target="_blank"><img src="/dist/images/jruth-project.jpg" alt=" John Ruth project image"></a></div>
-        <div class="item"><a href="https://killygordoncarsales.ie" target="_blank"><img src="/dist/images/killygordon-project.jpg" alt="Killygordon project image"></a></div>
-        <div class="item"><a href="https://peterclerkin.github.io/memory-cards" target="_blank"><img src="/dist/images/memorycard-project.jpg" alt="Memory card game project image"></a></div>
-        <div class="item"><a href="https://peterclerkin.github.io/myreads/" target="_blank"><img src="/dist/images/my-reads-project.jpg" alt="project image"></a></div>
-        <div class="item"><a href="https://peterclerkin.github.io/neighbourhood-map/" target="_blank"><img src="/dist/images/neighbourhood-map-project.jpg" alt="project image"></a></div>
+        <div class="item">
+            <a href="https://webtown.ie" target="_blank">
+                <img src="/dist/images/webtown-project-image1.jpg" alt=" Webtown project image" class="image">
+                <div class="overlay overlayFade"></div>
+                <div class="content">
+                    <h3>Webtown</h3>
+                    <div class="contentBox"><p>Branding // Web Design & Development</p></div>
+                    <p>Branding and website design/development for the web design agency, Webtown.</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://johnruth.ie" target="_blank">
+                <img src="/dist/images/jruth-project.jpg" alt=" John Ruth project image">
+                <div class="overlay overlayFade"></div>
+                <div class="content">
+                    <h3>John Ruth & Sons</h3>
+                    <div class="contentBox-1"><p>Web Design & Development</p></div>
+                    <p>A website created for window and door suppliers, John Ruth & Sons.</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://killygordoncarsales.ie" target="_blank">
+                <img src="/dist/images/killygordon-project.jpg" alt="Killygordon project image">
+                <div class="overlay overlayFade"></div>
+                <div class="content">
+                    <h3>Killygordon Car Sales</h3>
+                    <div class="contentBox-2"><p>Web Design & Development</p></div>
+                    <p>An E-Commerce website created for Killygordon Car Sales.</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://peterclerkin.github.io/memory-cards" target="_blank">
+                <img src="/dist/images/memorycard-project.jpg" alt="Memory card game project image">
+                <div class="overlay overlayFade"></div>
+                <div class="content">
+                    <h3>Matching Card Game</h3>
+                    <div class="contentBox-3"><p>Javascript Project</p></div>
+                    <p>A matching card game made with vanilla Javascript.</p>
+                </div>
+            </a>
+        </div>
+        <div class="item"><a href="https://peterclerkin.github.io/myreads/" target="_blank">
+            <img src="/dist/images/my-reads-project.jpg" alt="project image">
+            <div class="overlay overlayFade"></div>
+                <div class="content">
+                    <h3>MyReads App</h3>
+                    <div class="contentBox-4"><p>React App Project</p></div>
+                    <p>A React.js Bookshelf app to organise your books.</p>
+                </div>
+        </a>
+    </div>
+        <div class="item"><a href="https://peterclerkin.github.io/neighbourhood-map/" target="_blank">
+            <img src="/dist/images/neighbourhood-map-project.jpg" alt="project image">
+            <div class="overlay overlayFade"></div>
+            <div class="content">
+                    <h3>Neighbourhood App</h3>
+                    <div class="contentBox-5"><p>React App Project</p></div>
+                    <p>A neighbourhood map app that shows map markers identifying 5 locations in a neighborhood.</p>
+                </div>
+        </a>
+    </div>
     </div>
 </section>
 
@@ -63,6 +118,11 @@
 <section id="contact">
     <div class="proj-title">
         <h2>Contact</h2>
+    </div>
+    <div class="contact-icons">
+            <a href="mailto:info@pclerkin.com"><span style="font-size: 5em; padding: 0.3em;"><i class="far fa-envelope"></i></span></a>
+            <a href="linkedin.com" target="_blank"><span style="font-size: 5em; padding: 0.3em;"><i class="fab fa-linkedin"></i></span></a>
+            <a href="github.com"><span style="font-size: 5em; padding: 0.3em;"><i class="fab fa-github"></i></span></div></a>
     </div>
 </section>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
