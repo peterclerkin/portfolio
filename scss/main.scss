@@ -207,6 +207,7 @@ ul li {
     width: max-content;
     background-color: #00bcd4;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox p {
@@ -219,6 +220,7 @@ ul li {
     width: max-content;
     background-color: #d32222;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox-1 p {
@@ -231,6 +233,7 @@ ul li {
     width: max-content;
     background-color: #2b7bc5;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox-2 p {
@@ -243,6 +246,7 @@ ul li {
     width: max-content;
     background-color: #aa7ecd;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox-3 p {
@@ -255,6 +259,7 @@ ul li {
     width: max-content;
     background-color: #2e7c30;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox-4 p {
@@ -267,6 +272,7 @@ ul li {
     width: max-content;
     background-color: #e4af0e;
     padding: 7px;
+    max-width: 100%;
 }
 
 .contentBox-5 p {
@@ -311,7 +317,18 @@ ul li {
 @include mediaXl {}
 
 // Desktops & Laptops
-@include mediaLg {}
+@include mediaLg {
+    .content h3 {
+        font-size: 3vw;
+    }
+
+    .content p {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+    }
+
+
+}
 
 // Tablets & Small Laptops
 @include mediaMd {
